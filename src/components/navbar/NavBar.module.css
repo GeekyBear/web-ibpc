@@ -1,5 +1,25 @@
+.container {
+  display: flex;
+}
+
+.logo {
+  background-color: #d6e6e8;
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.logo p {
+  font-size: 32px;
+  color: #0c0c0c;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
+  padding: 12px 20px;
+  flex: 1;
   background-color: #333;
   overflow: hidden;
 }
@@ -23,8 +43,8 @@
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04aa6d;
-  color: white;
+  background-color: #d6e6e8;
+  color: #302d33;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -34,7 +54,7 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+  .topnav a {
     display: none;
   }
   .topnav a.icon {

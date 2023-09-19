@@ -3,6 +3,10 @@
   max-width: 1400px;
 }
 
+.imageGallery p {
+  display: none;
+}
+
 .imageGallery > li {
   /* fallback */
   display: inline-block;
@@ -11,6 +15,10 @@
   /* end fallback */
   position: relative;
   cursor: pointer;
+}
+
+.imageGallery p {
+  padding-bottom: 20px;
 }
 
 @supports (display: flex) {
@@ -60,4 +68,11 @@
 /* hover */
 .imageGallery li:hover .overlay {
   transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .imageGallery p {
+    display: block;
+    font-weight: bold;
+  }
 }
