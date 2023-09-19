@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1400px;
+  margin-top: 80px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+}

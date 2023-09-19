@@ -1,0 +1,18 @@
+.container {
+  max-width: 900px;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container span {
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .container span {
+    padding: 20px;
+  }
+}

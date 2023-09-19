@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/preacher.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.internal {
+  display: flex;
+  flex-direction: column;
+}
+.internal h2 {
+  margin: 20px 0px;
+}
+
+.internal button {
+  color: white;
+  text-decoration: none;
+  border-color: white;
+  background-color: transparent;
+  padding: 20px 40px;
+}
