@@ -13,20 +13,25 @@ export default function NavBar() {
   }
 
   return (
-    <div className={styles.topnav} id="myTopnav">
-      <a href="#home" className={styles.active}>
-        IBPC
-      </a>
-      <a href="#news">Sobre nosotros</a>
-      <a href="#contact">Ministerios</a>
-      <a href="#about">Blog</a>
-      <a
-        href="javascript:void(0);"
-        className={styles.icon}
-        onClick={() => myFunction()}
-      >
-        <i class="fa fa-bars"></i>
-      </a>
+    <div className={styles.container}>
+      <div className={styles.logo}>
+        <p>IBPC</p>
+      </div>
+      <div className={styles.topnav} id="myTopnav">
+        {/* <a href="#home" className={styles.active}>
+          IBPC
+        </a> */}
+        <a href="#news">Sobre nosotros</a>
+        <a href="#contact">Ministerios</a>
+        <a href="#about">Blog</a>
+        <a
+          href="javascript:void(0);"
+          className={styles.icon}
+          onClick={() => myFunction()}
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
   );
 }

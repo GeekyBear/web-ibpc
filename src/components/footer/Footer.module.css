@@ -18,3 +18,19 @@
   flex: 2;
   justify-content: space-around;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: none;
+  }
+
+  .single {
+    padding: 30px;
+  }
+
+  .group {
+    padding: 30px;
+  }
+}
