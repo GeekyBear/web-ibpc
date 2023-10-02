@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../card/Card";
+import Card from "../../card/Card";
 import styles from "./More.module.css";
 
 const titles = ["Quienes somos", "Testimonios", "Contactenos"];

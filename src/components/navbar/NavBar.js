@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./NavBar.module.css";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   function myFunction() {
@@ -21,9 +22,9 @@ export default function NavBar() {
         {/* <a href="#home" className={styles.active}>
           IBPC
         </a> */}
-        <a href="#news">Sobre nosotros</a>
-        <a href="#contact">Ministerios</a>
-        <a href="#about">Blog</a>
+        <Link to={"/about"}>Sobre nosotros</Link>
+        <Link to={"/blog"}>Blog</Link>
+        <Link to={"/contact"}>Contacto</Link>
         <a
           href="javascript:void(0);"
           className={styles.icon}

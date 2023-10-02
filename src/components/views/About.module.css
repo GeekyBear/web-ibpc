@@ -1,0 +1,38 @@
+.container {
+  justify-self: center;
+  max-width: 900px;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whoWeAre {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 2px 3px 7px 3px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 2px 3px 7px 3px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 2px 3px 7px 3px rgba(0, 0, 0, 0.26);
+}
+
+.history {
+  justify-self: center;
+  max-width: 900px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

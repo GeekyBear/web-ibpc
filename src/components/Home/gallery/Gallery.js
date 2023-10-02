@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Gallery.module.css";
-import groups from "../../assets/groups.jpg";
-import events from "../../assets/eventos.jpg";
-import counseling from "../../assets/counseling.jpg";
-import service from "../../assets/service.jpg";
-import missions from "../../assets/missions.jpg";
+import groups from "../../../assets/groups.jpg";
+import events from "../../../assets/eventos.jpg";
+import counseling from "../../../assets/counseling.jpg";
+import service from "../../../assets/service.jpg";
+import missions from "../../../assets/missions.jpg";
 
 export default function Gallery() {
   return (
@@ -32,10 +32,10 @@ export default function Gallery() {
           </div>
         </li>
         <li>
-          <p>Servicio</p>
-          <img src={service} alt="Servicio" />
+          <p>Reuniones</p>
+          <img src={service} alt="Reuniones" />
           <div className={styles.overlay}>
-            <span>Servicio</span>
+            <span>Reuniones</span>
           </div>
         </li>
         <li>

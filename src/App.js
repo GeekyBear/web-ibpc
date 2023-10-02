@@ -1,33 +1,28 @@
 import "./App.css";
-import MyCarousel from "./components/carousel/MyCarousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Routes, Route } from "react-router-dom";
+
 import NavBar from "./components/navbar/NavBar";
-import Intro from "./components/intro/Intro";
-import Gallery from "./components/gallery/Gallery";
-import LastMessage from "./components/lastMessage/LastMessage";
-import More from "./components/more/More";
-import Footer from "./components/footer/Footer";
+import About from "./components/views/About";
+import Blog from "./components/views/Blog";
+import Home from "./components/views/Home";
+import NoMatch from "./components/views/NoMatch";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <header style={{ display: "flex", height: "80vh" }}>
-        <MyCarousel />
-      </header>
-      <main
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <Intro />
-        <Gallery />
-        <LastMessage />
-        <More />
-        <Footer />
-      </main>
+      <Routes>
+        <Route>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="blog" element={<Blog />} />
+
+          {/* Using path="*"" means "match anything", so this route
+                acts like a catch-all for URLs that we don't have explicit
+                routes for. */}
+          <Route path="*" element={<NoMatch />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

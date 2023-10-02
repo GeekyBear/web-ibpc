@@ -2,9 +2,9 @@ import React from "react";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
-import father from "../../assets/father-son-hand.jpg";
-import man from "../../assets/man-praying.jpg";
-import woman from "../../assets/woman-thinking.jpg";
+import father from "../../../assets/father-son-hand.jpg";
+import man from "../../../assets/man-praying.jpg";
+import woman from "../../../assets/woman-thinking.jpg";
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
