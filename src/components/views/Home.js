@@ -24,8 +24,8 @@ export default function Home() {
         <Gallery />
         <LastMessage />
         <More />
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }
