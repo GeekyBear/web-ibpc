@@ -9,12 +9,13 @@ export default function Card({ title, index }) {
     <div className={styles.container}>
       <div className={styles.internal}>
         <img
+          alt="Imagenes"
           src={index === 0 ? image1 : index === 1 ? image2 : image3}
           className={styles.image}
         />
         <div className={styles.info}>
           <h4>{title}</h4>
-          <button>Explorar</button>
+          <button>Ver más</button>
         </div>
       </div>
     </div>

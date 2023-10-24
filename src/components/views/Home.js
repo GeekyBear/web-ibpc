@@ -1,5 +1,4 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import MyCarousel from "../../components/Home/carousel/MyCarousel";
 import Intro from "../../components/Home/intro/Intro";
 import Gallery from "../../components/Home/gallery/Gallery";
