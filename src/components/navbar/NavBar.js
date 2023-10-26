@@ -26,6 +26,33 @@ export default function NavBar() {
                 Nuestra iglesia
               </Link>
             </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Actividades
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Reuniones
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Ministerios
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Otros
+                  </a>
+                </li>
+              </ul>
+            </li>
             <li className="nav-item">
               <Link to={"/blog"} className="nav-link">
                 Blog
