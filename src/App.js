@@ -7,6 +7,7 @@ import Blog from "./components/views/Blog";
 import Home from "./components/views/Home";
 import NoMatch from "./components/views/NoMatch";
 import Post from "./components/views/Post";
+import Prays from "./components/views/Prays";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route>
-          <Route index element={<Home />} />
+          <Route index element={<Prays />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:id" element={<Post />} />

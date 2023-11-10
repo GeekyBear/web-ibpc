@@ -10,7 +10,6 @@ export default function About() {
             <div class="col-md-7">
               <h2 class="featurette-heading fw-normal lh-1">¿Quienes somos?</h2>
               <p class="lead">
-                {" "}
                 Somos una iglesia moldeada por las "Buenas noticias" de quién es
                 Jesús y lo que ha hecho. ¡Y puede cambiar tu vida!
               </p>
