@@ -38,7 +38,7 @@ export default function MyCarousel() {
           <div className="container">
             <div className="carousel-caption text-start">
               <h1>Dios es fiel</h1>
-              <p classNameName="opacity-75">
+              <p className="opacity-75">
                 44° años bajo su fidelidad y misericordia.
               </p>
             </div>

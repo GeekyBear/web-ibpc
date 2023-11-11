@@ -59,6 +59,11 @@ export default function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link to={"/declaration"} className="nav-link">
+                Declaración de Fe
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to={"/blog"} className="nav-link">
                 Blog
               </Link>

@@ -1,6 +1,7 @@
 import React from "react";
 import iglesia from "../../assets/parquecasas.png";
 import Footer from "../Home/footer/Footer";
+
 export default function About() {
   return (
     <div>
