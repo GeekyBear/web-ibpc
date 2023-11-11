@@ -5,16 +5,18 @@ export default function About() {
   return (
     <div>
       <main>
-        <div class="container marketing ">
-          <div class="row featurette pt-3 align-items-center">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">¿Quienes somos?</h2>
-              <p class="lead">
+        <div className="container marketing ">
+          <div className="row featurette pt-3 align-items-center">
+            <div className="col-md-7">
+              <h2 className="featurette-heading fw-normal lh-1">
+                ¿Quienes somos?
+              </h2>
+              <p className="lead">
                 Somos una iglesia moldeada por las "Buenas noticias" de quién es
                 Jesús y lo que ha hecho. ¡Y puede cambiar tu vida!
               </p>
             </div>
-            <div class="col-md-5">
+            <div className="col-md-5">
               <img
                 src={iglesia}
                 alt="Iglesia de Parque Casas"
@@ -24,16 +26,15 @@ export default function About() {
             </div>
           </div>
 
-          <hr class="featurette-divider" />
+          <hr className="featurette-divider" />
 
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading fw-normal lh-1">
+          <div className="row featurette">
+            <div className="col-md-7 order-md-2">
+              <h2 className="featurette-heading fw-normal lh-1">
                 Nuestra historia en{" "}
-                <span class="text-body-secondary">Parque Casas.</span>
+                <span className="text-body-secondary">Parque Casas.</span>
               </h2>
-              <p class="lead">
-                {" "}
+              <p className="lead">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 sit amet volutpat eros. Donec efficitur semper semper.
                 Vestibulum auctor rutrum ante ut pharetra. Phasellus luctus
@@ -51,7 +52,7 @@ export default function About() {
                 laoreet efficitur, neque mauris sagittis dui, in malesuada nisl
               </p>
             </div>
-            <div class="col-md-5 order-md-1">
+            <div className="col-md-5 order-md-1">
               <img
                 src={iglesia}
                 alt="Iglesia de Parque Casas"
@@ -62,14 +63,14 @@ export default function About() {
             </div>
           </div>
 
-          <hr class="featurette-divider" />
+          <hr className="featurette-divider" />
 
-          <div class="row featurette">
-            <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">
+          <div className="row featurette">
+            <div className="col-md-7">
+              <h2 className="featurette-heading fw-normal lh-1">
                 Otro panel informativo que quisieran agregar{" "}
               </h2>
-              <p class="lead">
+              <p className="lead">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 sit amet volutpat eros. Donec efficitur semper semper.
                 Vestibulum auctor rutrum ante ut pharetra. Phasellus luctus
@@ -90,7 +91,7 @@ export default function About() {
             </div>
           </div>
 
-          <hr class="featurette-divider" />
+          <hr className="featurette-divider" />
         </div>
       </main>
       <Footer />

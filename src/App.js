@@ -8,6 +8,7 @@ import Home from "./components/views/Home";
 import NoMatch from "./components/views/NoMatch";
 import Post from "./components/views/Post";
 import Prays from "./components/views/Prays";
+import Ministries from "./components/views/Ministries";
 
 function App() {
   return (
@@ -15,14 +16,12 @@ function App() {
       <NavBar />
       <Routes>
         <Route>
-          <Route index element={<Prays />} />
+          <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="ministries" element={<Ministries />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="prays" element={<Prays />} />
           <Route path="blog/:id" element={<Post />} />
-
-          {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

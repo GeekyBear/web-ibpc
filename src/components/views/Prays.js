@@ -22,6 +22,7 @@ export default function Prays() {
   }, []);
 
   useEffect(() => {
+    console.log("fetching");
     async function fetchPrayers() {
       const querySnapshot = await getPrays();
       const praysData = querySnapshot.docs.map((doc) => {

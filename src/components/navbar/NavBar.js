@@ -42,9 +42,9 @@ export default function NavBar() {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to={"/ministries"} className="nav-link text-black">
                     Ministerios
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
@@ -52,6 +52,11 @@ export default function NavBar() {
                   </a>
                 </li>
               </ul>
+            </li>
+            <li className="nav-item">
+              <Link to={"/prays"} className="nav-link">
+                Oraciones
+              </Link>
             </li>
             <li className="nav-item">
               <Link to={"/blog"} className="nav-link">
