@@ -37,9 +37,9 @@ export default function NavBar() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link to={"/meetings"} className="nav-link text-black">
                     Reuniones
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link to={"/ministries"} className="nav-link text-black">

@@ -1,8 +1,9 @@
 import React from "react";
-import groups from "../../../assets/groups.jpg";
-import events from "../../../assets/eventos.jpg";
+import parque from "../../../assets/parque.webp";
+import mujeres from "../../../assets/mujeres.webp";
 import counseling from "../../../assets/counseling.jpg";
 import service from "../../../assets/service.jpg";
+import { Link } from "react-router-dom";
 // import missions from "../../../assets/missions.jpg";
 
 export default function Gallery() {
@@ -12,7 +13,7 @@ export default function Gallery() {
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div className="col">
             <div className="card shadow-sm">
-              <img src={groups} alt="Grupos" className="img-fluid" />
+              <img src={parque} alt="Grupos" className="img-fluid" />
               <div className="card-body">
                 <div className="d-flex justify-content-between align-items-center">
                   <p className="card-text">Reuniones</p>
@@ -21,7 +22,9 @@ export default function Gallery() {
                       type="button"
                       className="btn btn-sm btn-outline-secondary"
                     >
-                      Entrar
+                      <Link to={"/meetings"} className="nav-link text-black">
+                        Entrar
+                      </Link>
                     </button>
                   </div>
                 </div>
@@ -30,16 +33,18 @@ export default function Gallery() {
           </div>
           <div className="col">
             <div className="card shadow-sm">
-              <img src={events} alt="Grupos" className="img-fluid" />
+              <img src={mujeres} alt="Grupos" className="img-fluid" />
               <div className="card-body">
                 <div className="d-flex justify-content-between align-items-center">
-                  <p className="card-text">Grupos</p>
+                  <p className="card-text">Ministerios</p>
                   <div className="btn-group">
                     <button
                       type="button"
                       className="btn btn-sm btn-outline-secondary"
                     >
-                      Entrar
+                      <Link to={"/ministries"} className="nav-link text-black">
+                        Entrar
+                      </Link>
                     </button>
                   </div>
                 </div>

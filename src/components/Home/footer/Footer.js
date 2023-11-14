@@ -106,8 +106,8 @@ export default function Footer() {
       </div>
 
       <div className="d-flex flex-column no-gutters flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>
-          &copy; 2023 ICE Barrio Parque Casase. Todos los derechos reservados.
+        <p className="text-white">
+          &copy; 2023 ICE Barrio Parque Casas. Todos los derechos reservados.
         </p>
         <ul className="list-unstyled d-flex">
           <li className="ms-3">
