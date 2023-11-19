@@ -1,8 +1,15 @@
 import React from "react";
 import iglesia from "../../assets/parquecasas.png";
 import Footer from "../Home/footer/Footer";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div>
       <main>

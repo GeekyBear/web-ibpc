@@ -44,6 +44,10 @@ export default function Prays() {
 
   return (
     <div className="container-fluid text-center">
+      <h1>Motivos de oracion</h1>
+      <h2 className="text-danger">
+        Solo para miembros de la iglesia, no va a estar publico
+      </h2>
       {windowWidth > 600 ? (
         <div className="row">
           <div className="col">

@@ -6,7 +6,16 @@ export default function LastMessage() {
     <div className={styles.container}>
       <div className={styles.internal}>
         <h2>Ultimo mensaje</h2>
-        <button>Mirar</button>
+        <button
+          onClick={() =>
+            window.open(
+              "https://youtu.be/ovI6WmuV5yA?si=6SOyYuiKGwUCJl3J",
+              "_blank"
+            )
+          }
+        >
+          Mirar
+        </button>
       </div>
     </div>
   );

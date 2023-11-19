@@ -1,8 +1,10 @@
 import React from "react";
 import parque from "../../../assets/parque.webp";
 import mujeres from "../../../assets/mujeres.webp";
-import counseling from "../../../assets/counseling.jpg";
+import consejeria from "../../../assets/consejeria.webp";
+import mision from "../../../assets/mision.webp";
 import service from "../../../assets/service.jpg";
+import declaracion from "../../../assets/declaracion.webp";
 import { Link } from "react-router-dom";
 // import missions from "../../../assets/missions.jpg";
 
@@ -53,7 +55,7 @@ export default function Gallery() {
           </div>
           <div className="col">
             <div className="card shadow-sm">
-              <img src={counseling} alt="Grupos" className="img-fluid" />
+              <img src={consejeria} alt="Grupos" className="img-fluid" />
               <div className="card-body">
                 <div className="d-flex justify-content-between align-items-center">
                   <p className="card-text">Consejería pastoral</p>
@@ -72,26 +74,8 @@ export default function Gallery() {
 
           <div className="col">
             <div className="card shadow-sm">
-              <img src={service} alt="Grupos" className="img-fluid" />
-              <div className="card-body">
-                <div className="d-flex justify-content-between align-items-center">
-                  <p className="card-text">Reuniones</p>
-                  <div className="btn-group">
-                    <button
-                      type="button"
-                      className="btn btn-sm btn-outline-secondary"
-                    >
-                      Entrar
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card shadow-sm">
               <img
-                src={service}
+                src={mision}
                 alt="Grupos"
                 className="img-fluid  mx-auto d-block"
               />
@@ -113,7 +97,7 @@ export default function Gallery() {
           <div className="col">
             <div className="card shadow-sm">
               <img
-                src={service}
+                src={declaracion}
                 alt="Grupos"
                 className="img-fluid  mx-auto d-block"
               />
@@ -125,7 +109,9 @@ export default function Gallery() {
                       type="button"
                       className="btn btn-sm btn-outline-secondary"
                     >
-                      Entrar
+                      <Link to={"/declaration"} className="nav-link text-black">
+                        Entrar
+                      </Link>
                     </button>
                   </div>
                 </div>

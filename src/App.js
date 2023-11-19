@@ -11,6 +11,8 @@ import Prays from "./components/views/Prays";
 import Ministries from "./components/views/Ministries";
 import Declaration from "./components/views/Declaration";
 import Meetings from "./components/views/Meetings";
+import Contact from "./components/views/Contact";
+import Resources from "./components/views/Resources";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="meetings" element={<Meetings />} />
           <Route path="declaration" element={<Declaration />} />
           <Route path="blog/:id" element={<Post />} />
+          <Route path="resources" element={<Resources />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

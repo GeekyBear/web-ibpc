@@ -47,15 +47,15 @@ export default function NavBar() {
                   </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Otros
-                  </a>
+                  <Link to={"/resources"} className="nav-link text-black">
+                    Recursos
+                  </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
               <Link to={"/prays"} className="nav-link">
-                Oraciones
+                Motivos de oracion
               </Link>
             </li>
             <li className="nav-item">
